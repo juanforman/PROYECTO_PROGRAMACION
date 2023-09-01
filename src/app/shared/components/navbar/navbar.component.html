@@ -1,1 +1,24 @@
-<p>navbar works!</p>
+      <mat-toolbar color="prymari">
+        <button mat-icon-button routerLink="/inicio" class="example-icon" aria aria-label="Example icon-button with menu icon">
+          <mat-icon>home</mat-icon>
+        </button>
+    <span>My App</span>
+    
+    <span class="example-spacer"></span>
+
+    <!-- ENRUTAMOS PÁGINAS -->
+    <button mat-button routerLink="/inicio">Inicio</button>
+    <button mat-button routerLink="/nosotros">Nosotros</button>
+    
+    <button mat-icon-button routerLink="/register">
+     <mat-icon>person_add</mat-icon>
+   </button>
+   
+   <button mat-icon-button routerLink="/login">
+      <mat-icon>person</mat-icon>
+
+      <button mat-icon-button routerLink="/login">
+        <mat-icon>person_off</mat-icon>
+      </button>
+   </button>
+  </mat-toolbar>

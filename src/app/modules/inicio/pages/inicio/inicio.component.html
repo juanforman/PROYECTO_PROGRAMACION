@@ -1,1 +1,24 @@
-<p>inicio works!</p>
+<div class="container">
+  <div class="row">
+    <div class="titulo">
+      <div class="col" div *ngFor="let i of info" class="div">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <!-- TITULO -->
+            <mat-card-title>{{i.nombre}}</mat-card-title>
+          </mat-card-header>
+          <!-- IMAGEN -->
+          <img mat-card-image src="{{i.imagen}}" alt="{{i}}" width="250px">
+          <mat-card-content>
+            <!-- DESCRIPCION -->
+            <p>
+              {{i.descripcion}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+
+      </div>
